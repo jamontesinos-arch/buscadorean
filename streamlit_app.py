@@ -7,7 +7,7 @@ import time
 st.set_page_config(page_title="Buscador de EANs Tentacool", page_icon="🔍")
 
 # 👇 SOLUCIÓN: Forzamos la conexión segura con https:// 👇
-st.image("tentacool.jpg", width=100)
+st.image("tentacool.jpg", width=1000)
 
 st.title("🔍 Buscador de Productos por EAN Tentacool")
 st.markdown("""
@@ -61,6 +61,7 @@ if st.button("Iniciar Búsqueda", type="primary"):
             # Pausa para evitar bloqueos
             time.sleep(2)
         st.balloons()
+
 
 
 
