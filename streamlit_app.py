@@ -9,7 +9,7 @@ st.set_page_config(page_title="Buscador de EANs Tentacool", page_icon="🔍")
 # 👇 IMAGEN AÑADIDA AQUÍ 👇
 st.image("https://lh3.googleusercontent.com/gg-dl/AOI_d_-FDXrrzhpQTNmMZjQFRnPFvoobLDCvnUeCsZtovWeaRtrE76aCWo_QgS3fvp2QYsgN3LCXc6tupdgfVZHS6rwkhIrawmBXJo8Dzb2tRhrbaN74EOBZ30xzb4CpUdDh1QXRX4QlI8ZApMLufc6dRZiZiKMMm_wkWMfLj2Yskf1fGBJwOA=s1600-rj", width=100)
 
-st.title("🔍 Buscador de Productos por EAN")
+st.title("🔍 Buscador de Productos por EAN Tentacool")
 st.markdown("""
 Pega tu lista de códigos EAN abajo (uno por línea). 
 Esta herramienta buscará el nombre y el MPN en internet automáticamente.
@@ -61,3 +61,4 @@ if st.button("Iniciar Búsqueda", type="primary"):
             # Pausa para evitar bloqueos
             time.sleep(2)
         st.balloons()
+
