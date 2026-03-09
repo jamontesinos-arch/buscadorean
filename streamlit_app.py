@@ -6,8 +6,8 @@ import time
 # Configuración de la interfaz
 st.set_page_config(page_title="Buscador de EANs Tentacool", page_icon="🔍")
 
-# 👇 IMAGEN AÑADIDA AQUÍ 👇
-st.image("https://lh3.googleusercontent.com/gg-dl/AOI_d_-FDXrrzhpQTNmMZjQFRnPFvoobLDCvnUeCsZtovWeaRtrE76aCWo_QgS3fvp2QYsgN3LCXc6tupdgfVZHS6rwkhIrawmBXJo8Dzb2tRhrbaN74EOBZ30xzb4CpUdDh1QXRX4QlI8ZApMLufc6dRZiZiKMMm_wkWMfLj2Yskf1fGBJwOA=s1600-rj", width=100)
+# 👇 SOLUCIÓN: Forzamos la conexión segura con https:// 👇
+st.image("https://googleusercontent.com/profile/picture/0", width=100)
 
 st.title("🔍 Buscador de Productos por EAN Tentacool")
 st.markdown("""
@@ -19,7 +19,7 @@ Esta herramienta buscará el nombre y el MPN en internet automáticamente.
 def buscar_producto(ean):
     url = f"https://es.search.yahoo.com/search?p={ean}"
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Accept-Language": "es-ES,es;q=0.9"
     }
     try:
@@ -61,4 +61,5 @@ if st.button("Iniciar Búsqueda", type="primary"):
             # Pausa para evitar bloqueos
             time.sleep(2)
         st.balloons()
+
 
