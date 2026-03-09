@@ -60,7 +60,8 @@ if st.button("Iniciar Búsqueda", type="primary"):
             
             # Pausa para evitar bloqueos
             time.sleep(2)
-        st.balloons()
+        st.toast()
+
 
 
 
