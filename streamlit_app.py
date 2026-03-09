@@ -4,7 +4,10 @@ from bs4 import BeautifulSoup
 import time
 
 # Configuración de la interfaz
-st.set_page_config(page_title="Buscador de EANs", page_icon="🔍")
+st.set_page_config(page_title="Buscador de EANs Tentacool", page_icon="🔍")
+
+# 👇 IMAGEN AÑADIDA AQUÍ 👇
+st.image("https://lh3.googleusercontent.com/gg-dl/AOI_d_-FDXrrzhpQTNmMZjQFRnPFvoobLDCvnUeCsZtovWeaRtrE76aCWo_QgS3fvp2QYsgN3LCXc6tupdgfVZHS6rwkhIrawmBXJo8Dzb2tRhrbaN74EOBZ30xzb4CpUdDh1QXRX4QlI8ZApMLufc6dRZiZiKMMm_wkWMfLj2Yskf1fGBJwOA=s1600-rj", width=100)
 
 st.title("🔍 Buscador de Productos por EAN")
 st.markdown("""
